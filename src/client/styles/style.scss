@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    --primary-color: #20262E;
+    --secondary-color: #B05A7A;
+    --backgroundAndHoverColor: #F7EFE5;
+    --default-transition: 0.2s;
+    --default-borderRadius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundAndHoverColor);
+}
+
+body .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#entryHolder img {
+    width: 50px;
+    padding: 0;
+    transition: var(--default-transition);
+}
+
+#entryHolder #picture img{
+    width: 250px;
+}
+
+img:hover {
+    transform: rotate(-1deg);
+}
+
+body h1 {
+    color: var(--primary-color);
+    font-size: 30px;
+    transition: var(--default-transition);
+    padding: 10px;
+    margin: 0;
+}
+
+body h1:hover {
+    letter-spacing: 5px;
+    color: var(--secondary-color);
+}
+
+.container {
+    border-radius: var(--default-borderRadius);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;    
+    }
+    body h1 {
+        font-size: 60px;
+    }
+}
+
+// Medium Screens
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+    body h1 {
+        font-size: 80px;
+    }
+}
+
+
+// Large Screens
+
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+    body h1 {
+        font-size: 100px;
+    }
+}
+
+
+
+
+#userEntry {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: var(--default-borderRadius);
+    border: none;
+    background-color: var(--backgroundAndHoverColor);
+    outline: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+input::placeholder {
+    font-size: small;
+    font-weight: 400;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: var(--default-borderRadius);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(--secondary-color);
+    transition: var(--default-transition);
+    background-color: var(--primary-color);
+}
+
+button:hover {
+    color: var(--backgroundAndHoverColor);
+    background-color: var(--primary-color);
+}
+
+
+.information {
+    color: var(--backgroundAndHoverColor);
+    letter-spacing: 2px;
+}
+
+#entryHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--default-borderRadius);
+    padding: 10px;
+    background-color: var(--backgroundAndHoverColor);
+    color: var(--primary-color);
+    gap: 10px;
+    flex-direction: column;
+}
+
+#entryHolder #date {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+
+

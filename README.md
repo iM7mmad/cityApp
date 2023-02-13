@@ -2,4 +2,4 @@
 
 This is the final project for the nanodegree
 
-You should enter the city name and you should get 
+You should enter the city name and you should get information about the city

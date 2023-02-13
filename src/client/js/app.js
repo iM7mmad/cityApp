@@ -43,8 +43,8 @@ async function handleSubmitButtonClickEvent(e) {
         const api_population = geonamesAPIResponse.geonames[0].population;
         const api_picture = pixabayAPIResponse.hits[0].largeImageURL
         const api_countryCode = weatherAPIResponse.data[0].country_code;
-        const api_lon = weatherAPIResponse.data[0].lon;
-        const api_lat = weatherAPIResponse.data[0].lat;
+        const api_lon = Math.round(weatherAPIResponse.data[0].lon);
+        const api_lat = Math.round(weatherAPIResponse.data[0].lat);
         const api_timezone = weatherAPIResponse.data[0].timezone;
         const api_icon = weatherAPIResponse.data[0].weather.icon;
 
